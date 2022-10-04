@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Activities]
+(
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Type] VARCHAR(50) NOT NULL,
+	[CityId] INT NOT NULL,
+	FOREIGN KEY (CityId) REFERENCES City(Id)
+)
